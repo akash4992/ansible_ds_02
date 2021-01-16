@@ -1,0 +1,4 @@
+--- 
+key: value
+myjavaOnUbuntu: openjdk-9-jre
+myjavaOnRedHat: java-1.9.0-openjdk
