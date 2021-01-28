@@ -1,5 +1,5 @@
 --- 
-- name: install java
+- name: update
   apt: 
    update_cache: yes
 - name: install java
