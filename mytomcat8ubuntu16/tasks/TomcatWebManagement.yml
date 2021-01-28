@@ -2,4 +2,14 @@
 - name: copy tomcat user file into server side
   template: 
    src:   templates/tomcatuser.j2
-   dest: sudo nano /opt/tomcat/conf/tomcat-users.xml
+   dest:  /opt/tomcat/conf/tomcat-users.xml
+
+- name: copy tomcat manager file into server side
+  template: 
+    src: templates/tomcatmanage.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: copy tomcat host manager file into server side
+  template: 
+    src: templates/tomcathostmanage.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
